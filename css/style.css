@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root{
+    /* ### Primary */
+
+--clr-str-cyan: hsl(172, 67%, 45%);
+/* 
+### Neutral */
+
+--clr-dark-900: hsl(183, 100%, 15%);
+--clr-dark-cryan-700: hsl(186, 14%, 43%);
+--clr-dark-cryan-400: hsl(184, 14%, 56%);
+--clr-lg-cryan-500: hsl(185, 41%, 84%);
+--clr-lg-cryan-700: hsl(189, 41%, 97%);
+--clr-White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: var(--clr-lg-cryan-500);
+    
+}
+main{
+    max-width: 420px;
+}
+.round{
+    border:1px solid transparent;
+    border-radius:5px;
+}
+
+.Box{
+    border-radius: 14px;
+    background-color: var(--clr-White);
+    padding:  30px
+}
+
+h2{
+    color: var(--clr-dark-cryan-900);
+
+  
+}
+.Bill{
+    background-color:var(--clr-lg-cryan-500);
+    height: 40px;
+}
+.Bill input{
+   outline: none;
+    width:85%;
+    background-color: transparent; 
+}
+
+.row{grid-column-gap: 15px;}
+.btn-1 {
+    background-color:var(--clr-dark-900);
+    color:var(--clr-White);
+}
+
+.btn-3 {
+    background-color:var(--clr-lg-cryan-700);
+    color:var(--clr-dark-900);
+}
+.total{
+    background-color:var(--clr-dark-900);
+    border-radius: 12px;
+}
+
+.total p:nth-child(odd){
+    color: var(--clr-White);
+    width: 25%;
+    word-wrap: wrap;
+    font-size: 14px;
+}
+.total p:nth-child(even){
+    color: var(--clr-str-cyan);
+    width: 25%;
+
+  }
+
+.btn-reset{ background-color:var(--clr-str-cyan);}
+
+
+@media (min-width:1024px) {
+
+ main{
+   max-width: 900px;
+ }
+            
+ .box{
+   width: 800px;
+    height: 400px;
+ }
+.frame-1{
+width:48%;
+height: 300px;
+}
+ .total{
+ width:48%;
+height: 350px;
+font-size:26px;
+ }
+
+.total button{
+ height: 40px;
+letter-spacing: 1.5px;
+justify-content: space-evenly;
+ }
+ .Bill input{ width:75%;}
+ }
+@media (min-width:1440px) {
+
+    
+}
+.btn-1:hover{
+  transition:.3s;
+background-color:var(--clr-str-cyan);
+ }
+.warn{
+    color:red;
+    letter-spacing: 1.2px;
+    font-size: 10px;
+}
+span{
+    font-size:12px;
+    color:#999;
+
+}
